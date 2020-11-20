@@ -2,6 +2,8 @@
 
 Todo app built with ExpressJS and TypeScript
 
+ExpressJS is a very unopinionated web application framework. It is quite the oposite of an opionated famework like Ruby on Rails. For that reason, this app loosely follows a model-view-controller design pattern; but it is still well organized.
+
 ## Requirements
 
 * PostgreSQL
