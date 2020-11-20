@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  h2= todo.title
+  p= todo.description
+
+  dl
+    dt Created at
+    dd= todo.createdAt.toLocaleString()
+    dt Updated at
+    dd= todo.updatedAt.toLocaleString()
+
+  form(action=`/todos/${todo.id}?_method=delete` method="POST")
+    button.btn.btn-outline-danger(type="submit") Delete Todo
+
+  a(href="/todos") &lt; All Todos
+

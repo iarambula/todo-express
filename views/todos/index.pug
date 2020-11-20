@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+  a.btn.btn-success.float-right(href="/todos/new") New
+  h2 Todos
+  table.table.table-sm.table-hover
+    thead
+      tr
+        th Title
+        th Created
+        th
+    tbody
+      if todos.length > 0
+        each todo in todos
+          tr
+            td.align-middle= todo.title
+            td.align-middle= todo.createdAt.toLocaleString()
+            td.align-middle
+              a.btn.btn-link.btn-sm(href=`/todos/${todo.id}/edit`) Edit
+              a.btn.btn-link.btn-sm(href=`/todos/${todo.id}`) Show
+      else
+        tr
+          td.text-center.align-middle(colspan="3") No todos to show.

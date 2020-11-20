@@ -1,0 +1,38 @@
+{
+  "name": "todo-express",
+  "version": "1.0.0",
+  "description": "Todo app built with Express and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev ./src/server.ts",
+    "start": "node ./build/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Arambula",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.3",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.5.1",
+    "popper.js": "^1.16.1",
+    "pug": "^3.0.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.29"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/method-override": "0.0.31",
+    "@types/morgan": "^1.9.2",
+    "@types/node": "^14.14.9",
+    "node-notifier": "^8.0.0",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0",
+    "tsc": "^1.20150623.0",
+    "typescript": "^4.0.5"
+  }
+}

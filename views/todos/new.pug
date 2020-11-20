@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h2 New Todo
+  form(action="/todos" method="POST")
+    .form-group
+      label(for="title") Title
+      input#title.form-control(name="title")
+    .form-group
+      label(for="description") Description
+      textarea#description.form-control(name="description")
+    button.btn.btn-primary(type="submit") Create

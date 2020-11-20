@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  h2 Edit Todo
+  form(action=`/todos/${todo.id}?_method=patch` method="POST")
+    .form-group
+      label(for="title") Title
+      input#title.form-control(name="title" value=todo.title)
+    .form-group
+      label(for="description") Description
+      textarea#description.form-control(name="description")= todo.description
+    button.btn.btn-primary(type="submit") Update
